@@ -46,29 +46,29 @@ Field|Data Type|Required|Restrictions
 
 ```
 const movieSchema = new mongoose.Schema({
-	title: {
-		type: String,
-		required: true,
-		maxlength: 100
-	},
-	year: {
-		type: Number,
-		required: true,
-		min: 1800,
-		max: 3000
-	},
-	directors: [{
-		type: String,
-		maxlength: 100
-	}],
-	writers: [{
-		type: String,
-		maxlength: 100
-	}],
-	cast: [{
-		type: String,
-		maxlength: 100
-	}]
+    title: {
+        type: String,
+        required: true,
+        maxlength: 100
+    },
+    year: {
+        type: Number,
+        required: true,
+        min: 1800,
+        max: 3000
+    },
+    directors: [{
+        type: String,
+        maxlength: 100
+    }],
+    writers: [{
+        type: String,
+        maxlength: 100
+    }],
+    cast: [{
+        type: String,
+        maxlength: 100
+    }]
 });
 ```
 
@@ -76,20 +76,20 @@ const movieSchema = new mongoose.Schema({
 
 ```
 {
-	"title" : "The Girl with Dragon Tattoo",
-	"year" : 2011,
-	"directors" : [
-		"David Fincher"
-	],
-	"writers" : [
-		"Steven Zaillian",
-		"Stieg Larsson"
-	],
-	"cast" : [
-		"Daniel Craig",
-		"Rooney Mara",
-		"Christopher Plummer"
-	]
+    "title" : "The Girl with Dragon Tattoo",
+    "year" : 2011,
+    "directors" : [
+        "David Fincher"
+    ],
+    "writers" : [
+        "Steven Zaillian",
+        "Stieg Larsson"
+    ],
+    "cast" : [
+        "Daniel Craig",
+        "Rooney Mara",
+        "Christopher Plummer"
+    ]
 }
 ```
 
