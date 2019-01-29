@@ -34,10 +34,10 @@ This command will import data from `movie-library-sample.json` to your MongoDB.
 
 ### Structure
 
-Field|Data Type|Required|Options
+Field|Data Type|Required|Restrictions
 :-----|:-----|:-----|:-----
 `title`|String|Required|No longer than 100 characters
-`year`|Number|Required|—
+`year`|Number|Required|No less than 1800 and no more than 3000
 `directors`|Array of Strings|Not Required|Each string is no longer than 100 characters
 `writers`|Array of Strings|Not Required|Each string is no longer than 100 characters
 `cast`|Array of Strings|Not Required|Each string is no longer than 100 characters
@@ -53,7 +53,9 @@ const movieSchema = new mongoose.Schema({
 	},
 	year: {
 		type: Number,
-		required: true
+		required: true,
+		min: 1800,
+		max: 3000
 	},
 	directors: [{
 		type: String,

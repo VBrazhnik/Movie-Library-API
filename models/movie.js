@@ -9,7 +9,9 @@ const movieSchema = new mongoose.Schema({
 	},
 	year: {
 		type: Number,
-		required: true
+		required: true,
+		min: 1800,
+		max: 3000
 	},
 	directors: [{
 		type: String,
@@ -30,7 +32,7 @@ const Movie = mongoose.model('Movie', movieSchema);
 const validate = (movie) => {
 	const schema = {
 		title: Joi.string().max(100).required(),
-		year: Joi.number().required(),
+		year: Joi.number().min(1800).max(3000).required(),
 		directors: Joi.array().items(Joi.string().max(100)),
 		writers: Joi.array().items(Joi.string().max(100)),
 		cast: Joi.array().items(Joi.string().max(100))
