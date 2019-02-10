@@ -1,9 +1,12 @@
 const config = require('config');
+
+const express = require('express');
 const helmet = require('helmet');
 const morgan = require('morgan');
-const mongoose = require('mongoose');
 const movies = require('./routes/movies');
-const express = require('express');
+
+const mongoose = require('mongoose');
+
 const app = express();
 
 mongoose.connect(`mongodb://${config.get('database.host')}/${config.get('database.name')}`,
