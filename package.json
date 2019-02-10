@@ -2,6 +2,12 @@
 	"name": "movie-library-api",
 	"version": "1.0.0",
 	"description": "Movie Library RESTful API",
+	"keywords": [
+		"Movie Library API",
+		"RESTful API",
+		"Express.js",
+		"Node.js"
+	],
 	"main": "index.js",
 	"scripts": {
 		"import": "mongoimport --db movie-library --collection movies --file movie-library-sample.json --jsonArray"
@@ -10,17 +16,12 @@
 		"type": "git",
 		"url": "git+https://github.com/VBrazhnik/Movie-Library-API.git"
 	},
-	"keywords": [
-		"Movie Library API",
-		"RESTful API",
-		"Express.js",
-		"Node.js"
-	],
-	"author": "VBrazhnik",
+	"homepage": "https://github.com/VBrazhnik/Movie-Library-API",
 	"bugs": {
 		"url": "https://github.com/VBrazhnik/Movie-Library-API/issues"
 	},
-	"homepage": "https://github.com/VBrazhnik/Movie-Library-API",
+	"author": "VBrazhnik",
+	"license": "MIT",
 	"dependencies": {
 		"config": "^3.0.1",
 		"express": "^4.16.4",
