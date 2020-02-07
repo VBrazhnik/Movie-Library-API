@@ -1,33 +1,52 @@
 {
-	"name": "movie-library-api",
-	"version": "1.0.0",
-	"description": "Movie Library RESTful API",
-	"keywords": [
-		"Movie Library API",
-		"RESTful API",
-		"Express.js",
-		"Node.js"
-	],
-	"main": "index.js",
-	"scripts": {
-		"import": "mongoimport --db movie-library --collection movies --file movie-library-sample.json --jsonArray"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/VBrazhnik/Movie-Library-API.git"
-	},
-	"homepage": "https://github.com/VBrazhnik/Movie-Library-API",
-	"bugs": {
-		"url": "https://github.com/VBrazhnik/Movie-Library-API/issues"
-	},
-	"author": "VBrazhnik",
-	"license": "MIT",
-	"dependencies": {
-		"config": "^3.0.1",
-		"express": "^4.16.4",
-		"helmet": "^3.15.0",
-		"joi": "^14.3.1",
-		"mongoose": "^5.4.7",
-		"morgan": "^1.9.1"
-	}
+  "name": "movie-library-api",
+  "version": "1.0.0",
+  "description": "Movie Library RESTful API",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VBrazhnik/Movie-Library-API.git"
+  },
+  "author": "VBrazhnik",
+  "homepage": "https://github.com/VBrazhnik/Movie-Library-API",
+  "bugs": {
+    "url": "https://github.com/VBrazhnik/Movie-Library-API/issues"
+  },
+  "main": "src/index.js",
+  "scripts": {
+    "import": "mongoimport --db movie-library --collection movies --file movie-library-sample.json --jsonArray",
+    "lint": "eslint --quiet ./src",
+    "prettier": "prettier --write \"**/*.{js,json,md}\" package.json",
+    "prettier:check": "prettier --check \"**/*.{js,json,md}\" package.json",
+    "start": "node src/index.js"
+  },
+  "keywords": [
+    "Movie Library API",
+    "RESTful API"
+  ],
+  "dependencies": {
+    "@hapi/joi": "^17.1.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-async-handler": "^1.1.4",
+    "helmet": "^3.21.2",
+    "http-status-codes": "^1.4.0",
+    "mongoose": "^5.8.11",
+    "morgan": "^1.9.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.2",
+    "@types/hapi__joi": "^16.0.9",
+    "@types/mongoose": "^5.7.0",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "prettier": "^1.19.1",
+    "prettier-plugin-package": "^0.3.1"
+  },
+  "prettier": {
+    "printWidth": 100,
+    "singleQuote": true,
+    "trailingComma": "all"
+  }
 }

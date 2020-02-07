@@ -1,7 +1,37 @@
 [
-	{ "title" : "The Girl with Dragon Tattoo", "year" : 2011, "directors" : ["David Fincher"], "writers" : ["Steven Zaillian", "Stieg Larsson"], "cast" : ["Daniel Craig", "Rooney Mara", "Christopher Plummer"] },
-	{ "title" : "Moneyball", "year" : 2011, "directors" : ["Bennett Miller"], "writers" : ["Steven Zaillian", "Aaron Sorkin"], "cast" : ["Brad Pitt", "Robin Wright", "Jonah Hill"] },
-	{ "title" : "3 Idiots", "year" : 2009, "directors" : ["Rajkumar Hirani"], "writers" : ["Rajkumar Hirani", "Abhijat Joshi"], "cast" : ["Aamir Khan", "Madhavan", "Mona Singh"] },
-	{ "title" : "Lone Survivor", "year" : 2013, "directors" : ["Peter Berg"], "writers" : ["Peter Berg", "Marcus Luttrell"], "cast" : ["Mark Wahlberg", "Taylor Kitsch", "Emile Hirsch"] },
-	{ "title" : "Children of Men", "year" : 2006, "directors" : ["Alfonso Cuarón"], "writers" : ["Alfonso Cuarón", "Timothy J. Sexton"], "cast" : ["Julianne Moore", "Clive Owen", "Chiwetel Ejiofor"] }
+  {
+    "title": "The Girl with Dragon Tattoo",
+    "year": 2011,
+    "directors": ["David Fincher"],
+    "writers": ["Steven Zaillian", "Stieg Larsson"],
+    "cast": ["Daniel Craig", "Rooney Mara", "Christopher Plummer"]
+  },
+  {
+    "title": "Moneyball",
+    "year": 2011,
+    "directors": ["Bennett Miller"],
+    "writers": ["Steven Zaillian", "Aaron Sorkin"],
+    "cast": ["Brad Pitt", "Robin Wright", "Jonah Hill"]
+  },
+  {
+    "title": "3 Idiots",
+    "year": 2009,
+    "directors": ["Rajkumar Hirani"],
+    "writers": ["Rajkumar Hirani", "Abhijat Joshi"],
+    "cast": ["Aamir Khan", "Madhavan", "Mona Singh"]
+  },
+  {
+    "title": "Lone Survivor",
+    "year": 2013,
+    "directors": ["Peter Berg"],
+    "writers": ["Peter Berg", "Marcus Luttrell"],
+    "cast": ["Mark Wahlberg", "Taylor Kitsch", "Emile Hirsch"]
+  },
+  {
+    "title": "Children of Men",
+    "year": 2006,
+    "directors": ["Alfonso Cuarón"],
+    "writers": ["Alfonso Cuarón", "Timothy J. Sexton"],
+    "cast": ["Julianne Moore", "Clive Owen", "Chiwetel Ejiofor"]
+  }
 ]
